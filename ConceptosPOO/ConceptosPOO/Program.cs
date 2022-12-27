@@ -1,4 +1,5 @@
 ﻿
 
+using ConceptosPOO;
 
-Console.WriteLine("Hello, World!");
+Console.WriteLine(new Date(2022, 7, 9));
