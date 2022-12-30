@@ -3,14 +3,21 @@
 using ConceptosPOO;
 
 
-try
-{
-	Console.WriteLine(new Date(2022, 11, 9));
-    Console.WriteLine(new Date(1974, 9, 27));
-    Console.WriteLine(new Date(1985, 12, 45));
+Console.WriteLine("Conceptos POO");
+Console.WriteLine("=============");
 
-}
-catch (Exception error)
+// Instanciamos un objeto de la clase SalaryEmployee
+Employee employee1 = new SalaryEmployee()
 {
-    Console.WriteLine(error.Message);
-}
+    Id = 10,
+    FirstName = "Carlos",
+    LastName = "Aguero",
+    BirthDate = new Date(1999,11,15),
+    HiringDate = new Date(2021,10,20),
+    IsActive = true,
+    Salary = 2550000M
+};
+
+// Imprimimos el objeto employee1
+Console.WriteLine(employee1);
+
